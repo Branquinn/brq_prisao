@@ -133,6 +133,3 @@ function SendWebhookMessage(webhook,message)
 		PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({content = message, username = 'MORAES!', avatar_url = 'https://cdn.discordapp.com/avatars/721212568495980547/a_d2129bfe1afcb6e6b7001de90e4d6686.gif?size=2048'}), { ['Content-Type'] = 'application/json' })
 	end
 end
-
-
--- SendWebhookMessage('https://discord.com/api/webhooks/859612270648229918/QSQhOpkqbT-v55EzDto5pgVCyJ9DdRlIngesDY1GSFu__dj6DLJ5FJQweIc_ujdNJGJ2','Quero café isso aqui é uma porcaria, merda nenhuma! Quero café! https://cdn.discordapp.com/avatars/721212568495980547/a_d2129bfe1afcb6e6b7001de90e4d6686.gif?size=2048')
